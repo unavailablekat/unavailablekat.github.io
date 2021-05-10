@@ -1,0 +1,49 @@
+
+
+        body{
+            margin:0;
+        }
+        button {
+            font-family: Overpass, sans-serif; font-weight: 400;
+            color: whitesmoke;
+            background-color: transparent;
+            border: none;
+            font-size: 50px;
+        }
+
+        .background {
+            min-height: 100%;
+
+            background-color: rgb(59, 167, 209);
+            padding: 10px;
+            box-sizing: border-box;
+        } 
+
+        .text {
+            color: black;
+            font-family: Overpass, sans-serif; font-weight: 400;
+        }
+
+        .headlines {
+            display:flex;
+            justify-content: space-between;
+            padding:0 50px;
+        }
+
+        .main {
+            position:absolute;
+            bottom: 50px;
+            padding:50 50px;
+        }
+
+        .about {
+            padding:50px 50px;
+        }
+
+        .about img {
+            border-radius: 24px;
+        }
+
+        .info {
+        }
+
