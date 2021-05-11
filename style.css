@@ -23,17 +23,24 @@
             font-family: Overpass, sans-serif; font-weight: 400;
         }
 
+
+        .text2 {
+            color:black;
+            font-family: Overpass, sans-serif; font-weight: 400;
+        }
+
         .headlines {
             display:flex;
             justify-content: space-between;
             padding:10px 50px;
-            background-color: #0000006f;
+            background: linear-gradient(#082fdd6f,#00000000)
         }
 
         .main {
             position:absolute;
             bottom: 50px;
-            padding:50 50px;
+            padding:50px 50px;
+            background: linear-gradient(#ffffff6f,#00000000)
         }
 
         .about {
