@@ -1,58 +1,49 @@
 <html>
   <head>
-    
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-</style>
-    
-    <style>
-      .background {
-        background-image: url('plane.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {
+        box-sizing: border-box;
       }
-    </style>
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+      }
+      
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+      }
+      
+      
+      
+      #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+
+
+      
+      
+      </style>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
 
@@ -60,29 +51,29 @@ body {
   </head>
 <body> 
 
-    
-
-<video autoplay muted loop id="myVideo">
-  <source src="pex.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+  <video autoplay muted loop id="myVideo">
+    <source src="pex.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  
+  
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
   }
-}
-</script>
-    <div class="background">
+  </script>
+
+    <div class="background1">
             <div class="headlines">  
                 <a href="index.html"><button>Home</button></a>
                 <a href="about.html"><button>About</button></a>
