@@ -30,12 +30,16 @@
         .text {
             color: whitesmoke;
             font-family: Overpass, sans-serif; font-weight: 400; font-size: 60;
+            padding: 10px 10px
     
         }       
 
         .text4 {
             color: whitesmoke;
             font-family: Overpass, sans-serif; font-weight: 400; font-size: 100;
+            bottom: 50px;
+        
+           
     
         }       
 
@@ -43,6 +47,7 @@
         .text3 {
             color: whitesmoke;
             font-family: Overpass, sans-serif; font-weight: 400; font-size: 70;
+            padding: 10px 10px
     
         }       
 
@@ -68,6 +73,10 @@
             position:absolute;
             bottom: 50px;
             padding:50px 50px;
+        }
+        .topmain {
+            padding:50px 50px;
+            position:relative
         }
 
         .about {
