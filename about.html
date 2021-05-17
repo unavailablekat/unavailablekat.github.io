@@ -15,6 +15,29 @@
 
   </head>
 <body> 
+
+  <video autoplay muted loop id="myVideo">
+    <source src="wing.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  
+  
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+  
     <div class="background">
             <div class="headlines">  
                 <a href="index.html"><button>Home</button></a>
@@ -40,10 +63,10 @@
             Culturally, I am a dual national, having been born in Seoul, Korea, but raised in Australia by a mother of Australian nationality. 
             <br>
             <br>
-            <br>
-            <br>
             Outside work and study, my hobbies including learning about technology, Marvel and Star Wars movies, boxing, snowboarding, digital painting and VR and PC gaming.
 
+
+            
         </div>
         </div>
         </div>
