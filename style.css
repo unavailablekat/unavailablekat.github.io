@@ -11,6 +11,15 @@
             font-size: 50px;
         }
 
+        
+        .background1 {
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+
+        .rightClass {right:0}
+
+
         .background {
             min-height: 100%;
 
@@ -30,17 +39,17 @@
         }
 
         .headlines {
+            position:relative;
             display:flex;
             justify-content: space-between;
             padding:10px 50px;
-            background: linear-gradient(#082fdd6f,#00000000)
+            background: linear-gradient(#0000006f,#00000000)
         }
 
         .main {
             position:absolute;
             bottom: 50px;
             padding:50px 50px;
-            background: linear-gradient(#ffffff6f,#00000000)
         }
 
         .about {

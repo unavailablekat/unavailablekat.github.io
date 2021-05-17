@@ -12,14 +12,28 @@
     <style>
     * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0}
-    .mySlides {display: none}
+    .mySlides {display: 100%;
+    
+    
+      align-items: center;
+    flex-direction: column;
+    
+    
+    }
     img {vertical-align: middle;}
     
     /* Slideshow container */
     .slideshow-container {
+      max-height: 500px;
       max-width: 1000px;
       position: relative;
       margin: auto;
+    }
+
+    
+    .slideshow-container img {
+      max-height: 500px;
+      margin:0 auto;
     }
     
     /* Next & previous buttons */
@@ -50,13 +64,16 @@
     }
     
     /* Caption text */
-    .text {
+    .caption.text {
+      border-radius: 999px;
+      background-color: midnightblue;
+      width: initial;
+      margin: 0 auto;
       color: #f2f2f2;
       font-size: 15px;
       padding: 8px 12px;
       position: absolute;
       bottom: 8px;
-      width: 100%;
       text-align: center;
     }
     
@@ -107,6 +124,13 @@
     @media only screen and (max-width: 300px) {
       .prev, .next,.text {font-size: 11px}
     }
+
+
+    .otherwork {
+
+      color:white;
+
+    }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
@@ -125,58 +149,87 @@
             </div>
 
 
+            <div class="otherwork"> 
+              <div class="text" style="font-size: 150px; " >Other Work</div>
+              <br>
+              <br>
+              
+              <br>
+              <br>
+              <br>
+              <div class="text" style="font-size: 100; font-family: Overpass;" >Art</div>
+              <br>
             
 <div class="slideshow-container">
 
   <div class="mySlides fade">
-    <div class="numbertext">1 / 8</div>
-    <img src="spiderman.png" style="width:700px">
-    <div class="text">Spiderman (Procreate)</div>
+    <div class="numbertext">1 / 11</div>
+    <img src="spiderman.png">
+    <div class="text caption">Spiderman (Procreate)</div>
   </div>
   
   <div class="mySlides fade">
-    <div class="numbertext">2 / 8</div>
-    <img src="sword.jpg" style="width:  300px;">
-    <div class="text">Sword (Blender)</div>
+    <div class="numbertext">2 / 11</div>
+    <img src="sword.jpg">
+    <div class="text caption">Sword (Blender)</div>
   </div>
   
   <div class="mySlides fade">
-    <div class="numbertext">3 / 8</div>
-    <img src="Artboard2.jpg" style="width:100%">
-    <div class="text">TFT KDA PopStars Hushtail</div>
+    <div class="numbertext">3 / 11</div>
+    <img src="Artboard2.jpg">
+    <div class="text caption">TFT KDA PopStars Hushtail</div>
   </div>
     
   <div class="mySlides fade">
-    <div class="numbertext">4 / 8</div>
-    <img src="bkgd.jpg" style="width:100%">
-    <div class="text">Mountain Scene (Procreate)</div>
+    <div class="numbertext">4 / 11</div>
+    <img src="bkgd.jpg">
+    <div class="text caption">Mountain Scene (Procreate)</div>
   </div>
     
   <div class="mySlides fade">
-    <div class="numbertext">5 / 8</div>
-    <img src="donut.png" style="width:100%">
-    <div class="text">Donut (Blender)</div>
+    <div class="numbertext">5 / 11</div>
+    <img src="donut.png">
+    <div class="text caption">Donut (Blender)</div>
   </div>
     
   <div class="mySlides fade">
-    <div class="numbertext">6 / 8</div>
-    <img src="cauldron.jpg" style="width:700px">
-    <div class="text">Cauldron (Procreate)</div>
+    <div class="numbertext">6 / 11</div>
+    <img src="cauldron.jpg">
+    <div class="text caption">Cauldron (Procreate)</div>
   </div>
 
     
   <div class="mySlides fade">
-    <div class="numbertext">7 / 8</div>
-    <img src="city.jpg" style="width:100%">
-    <div class="text">City View ( Procreate)</div>
+    <div class="numbertext">7 / 11</div>
+    <img src="city.jpg">
+    <div class="text caption">City View ( Procreate)</div>
   </div>
   
     
   <div class="mySlides fade">
-    <div class="numbertext">8 / 8</div>
-    <img src="Human.png" style="width:700px">
-    <div class="text"></div>
+    <div class="numbertext">8 / 11</div>
+    <img src="Human.png">
+    <div class="text caption"></div>
   </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 /11</div>
+    <img src="cheese kun.png">
+    <div class="text caption"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 11</div>
+    <img src="pika.png">
+    <div class="text caption"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 11</div>
+    <img src="girl.png">
+    <div class="text caption"></div>
+  </div>
+
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -193,6 +246,9 @@
     <span class="dot" onclick="currentSlide(6)"></span> 
     <span class="dot" onclick="currentSlide(7)"></span> 
     <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+    <span class="dot" onclick="currentSlide(11)"></span> 
 
   </div>
   
@@ -220,25 +276,15 @@
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "flex";  
     dots[slideIndex-1].className += " active";
   }
   </script>
   
-          <div class="main"> 
-            <div class="text2" style="font-size: 150px; " >Other Work</div>
-            <br>
-            <br>
-            
-            <br>
-            <br>
-            <br>
-            <div class="text2" style="font-size: 100; font-family: Overpass;" >Art</div>
-            <br>
-            <div class="text2" style="font-size: 70; font-family: Overpass;" >Portfolio</div>
-        </div>
         </div>
     
+        <div class="text" style="font-size: 70; font-family: Overpass;" >Portfolio</div>
+      </div>
 </body>
 
 </body>
