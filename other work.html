@@ -127,8 +127,9 @@
 
 
     .otherwork {
-
-      color:white;
+      position:relative;
+      color:black;
+      padding:100px 100px
 
     }
     </style>
@@ -137,158 +138,185 @@
 
     <link rel="stylesheet" href="style.css">
   </head>
-<body> 
-    <div class="background">
-            <div class="headlines">  
-                <a href="index.html"><button>Home</button></a>
-                <a href="about.html"><button>About</button></a>
-                <a href="law.html"><button>Law</button></a>
-                <a href="media.html"><button>Media</button></a>
-                <a href="other work.html"><button>Other Work</button></a>
-                <a href="contact.html"><button>Contact</button></a>
-            </div>
 
-
-            <div class="otherwork"> 
-              <div class="text" style="font-size: 150px; " >Other Work</div>
-              <br>
-              <br>
-              
-              <br>
-              <br>
-              <br>
-              <div class="text" style="font-size: 100; font-family: Overpass;" >Art</div>
-              <br>
-            
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 11</div>
-    <img src="spiderman.png">
-    <div class="text caption">Spiderman (Procreate)</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 11</div>
-    <img src="sword.jpg">
-    <div class="text caption">Sword (Blender)</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 11</div>
-    <img src="Artboard2.jpg">
-    <div class="text caption">TFT KDA PopStars Hushtail</div>
-  </div>
-    
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 11</div>
-    <img src="bkgd.jpg">
-    <div class="text caption">Mountain Scene (Procreate)</div>
-  </div>
-    
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 11</div>
-    <img src="donut.png">
-    <div class="text caption">Donut (Blender)</div>
-  </div>
-    
-  <div class="mySlides fade">
-    <div class="numbertext">6 / 11</div>
-    <img src="cauldron.jpg">
-    <div class="text caption">Cauldron (Procreate)</div>
-  </div>
-
-    
-  <div class="mySlides fade">
-    <div class="numbertext">7 / 11</div>
-    <img src="city.jpg">
-    <div class="text caption">City View ( Procreate)</div>
-  </div>
-  
-    
-  <div class="mySlides fade">
-    <div class="numbertext">8 / 11</div>
-    <img src="Human.png">
-    <div class="text caption"></div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">9 /11</div>
-    <img src="cheese kun.png">
-    <div class="text caption"></div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">10 / 11</div>
-    <img src="pika.png">
-    <div class="text caption"></div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">11 / 11</div>
-    <img src="girl.png">
-    <div class="text caption"></div>
-  </div>
-
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-    <span class="dot" onclick="currentSlide(5)"></span> 
-    <span class="dot" onclick="currentSlide(6)"></span> 
-    <span class="dot" onclick="currentSlide(7)"></span> 
-    <span class="dot" onclick="currentSlide(8)"></span> 
-    <span class="dot" onclick="currentSlide(9)"></span> 
-    <span class="dot" onclick="currentSlide(10)"></span> 
-    <span class="dot" onclick="currentSlide(11)"></span> 
-
-  </div>
-  
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "flex";  
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
-  
-        </div>
-    
-        <div class="text" style="font-size: 70; font-family: Overpass;" >Portfolio</div>
-      </div>
-</body>
-
-</body>
 </html> 
 
 </menu></div>
 </html>
+
+
+<body> 
+  <div class="background">
+
+    
+  <video autoplay muted loop id="myVideo">
+    <source src="pex.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  
+  
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+          <div class="headlines">  
+              <a href="index.html"><button>Home</button></a>
+              <a href="about.html"><button>About</button></a>
+              <a href="law.html"><button>Law</button></a>
+              <a href="media.html"><button>Media</button></a>
+              <a href="other work.html"><button>Other Work</button></a>
+              <a href="contact.html"><button>Contact</button></a>
+          </div>
+
+
+          <div class="otherwork"> 
+            <div class="text" style="font-size: 150px; " >Other Work</div>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <br>
+            <div class="text" style="font-size: 100; font-family: Overpass;" >Art</div>
+            <br>
+          
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 11</div>
+  <img src="spiderman.png">
+  <div class="text caption">Spiderman (Procreate)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 11</div>
+  <img src="sword.jpg">
+  <div class="text caption">Sword (Blender)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 11</div>
+  <img src="Artboard2.jpg">
+  <div class="text caption">TFT KDA PopStars Hushtail</div>
+</div>
+  
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <img src="bkgd.jpg">
+  <div class="text caption">Mountain Scene (Procreate)</div>
+</div>
+  
+<div class="mySlides fade">
+  <div class="numbertext">5 / 11</div>
+  <img src="donut.png">
+  <div class="text caption">Donut (Blender)</div>
+</div>
+  
+<div class="mySlides fade">
+  <div class="numbertext">6 / 11</div>
+  <img src="cauldron.jpg">
+  <div class="text caption">Cauldron (Procreate)</div>
+</div>
+
+  
+<div class="mySlides fade">
+  <div class="numbertext">7 / 11</div>
+  <img src="city.jpg">
+  <div class="text caption">City View ( Procreate)</div>
+</div>
+
+  
+<div class="mySlides fade">
+  <div class="numbertext">8 / 11</div>
+  <img src="Human.png">
+  <div class="text caption"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 /11</div>
+  <img src="cheese kun.png">
+  <div class="Cheese Kun"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 11</div>
+  <img src="pika.png">
+  <div class="Pikachu (Procreate)"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 11</div>
+  <img src="girl.png">
+  <div class="Girl No. 2 (Procreate)"></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+      </div>
+  
+      <div class="text" style="font-size: 70; font-family: Overpass;" >Portfolio</div>
+    </div>
+    
+</body>
+
+</body>
