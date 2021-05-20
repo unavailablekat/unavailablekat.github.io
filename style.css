@@ -149,7 +149,7 @@
           }
           .icon-bar {
             position: fixed; right: 0;
-            top: 50%;
+            top: 30%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -182,6 +182,12 @@
             background: #007bb5;
             color: white;
           }
+
+          .mail {
+            background:rgb(48, 50, 161);
+            color: white;
+          }
+
 
          .artcontainer {
             display: flex;
