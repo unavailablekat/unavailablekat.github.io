@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <style>
+      .background {
+        background-image: url('other.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+<body> 
+
+  <video autoplay muted loop id="myVideo">
+    <source src="cloudy.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  
+  
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+
+    <div class="background">
+      <div class="headlines">  
+        <a href="index.html"><button>Home</button></a>
+        
+        <a href="law.html"><button>Law</button></a>
+        <a href="media.html"><button>Media</button></a>
+        <div class="dropdown">
+          <span>More</span>
+          <div class="dropdown-content" text-align: > 
+            <ul>
+                <li><a href="about.html"><button>About</button></a></li>
+                <li><a href="other work.html"><button>Art</button></a></li>
+                <li><a href="tutoring.html"><button>Tutoring</button></a></li>
+                <li><a href="Other.html"><button>Other</button></a></li>
+                <li><a href="contact.html"><button>Contact</button></a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+          <div class="about" > 
+            <div class="text3" style="text-align: center">Other Skills/ Experience</div>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="info" style="text-align:left">
+            <ul>
+                <li>NSW Gov Dept of Customer Service</li>
+                <ul>
+                    <li>Administrative Support Officer for Telco/ ICT Procurement (Internship: 2021)</li>
+                </ul>
+                <li>Fluent in English</li>
+                <li>Basic proficiency (can read, write, speak) in Korean</li>
+            </ul>
+            <br>
+            <br>
+            
+           
+
+            
+        </div>
+        </div>
+        </div>
+
+</body>
+
+</menu></div>
+</html>
